@@ -1,0 +1,176 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+    <center>
+            <h1>МОЙ БЛОГ</h1>
+    </center>
+
+    <div class="alert alert-primary mt-2">
+        <h3 align="center">ОБО МНЕ</h3>
+        <hr>
+
+        <center>
+            <p>Чсв со стажем</p>
+        </center>
+        <hr>
+
+        <center>
+            <p>Победитель конкурса "Самый маленький член ИТМО" в номинации "Корень из 3"</p>
+        </center>
+        <hr>
+
+        <center>
+            <p>Лучший вертолет Гатчины</p>
+        </center>
+        <hr>
+
+        <center>
+            <p>Я люблю собак, всегда готов любить сразу несколько котов</p>
+        </center>
+        <hr>
+
+        <center>
+            <p>Для меня монеточка - это не певица</p>
+        </center>
+        <hr>
+
+        <center>
+            <p>Принц Гатчины</p>
+        </center>
+        <hr>
+
+        <center>
+            <p>Везде второй, но в жопу первый</p>
+        </center>
+        <hr>
+    </div>
+
+    <div class="alert alert-primary mt-2">
+        <h3 align="center">ФОТОПЛЕНКА</h3>
+        <hr>
+
+        <center>
+            <img src="{% static 'main/28.jpeg' %}" alt="My image" width="300" height="400">
+            <p>Когда немного плющит</p>
+        </center>
+
+        <center>
+            <img src="{% static 'main/13.jpeg' %}" alt="My image" width="300" height="400">
+            <p>Когда фокус с монеткой удался</p>
+        </center>
+
+        <center>
+            <img src="{% static 'main/7.jpeg' %}" alt="My image" width="300" height="300">
+            <p>Когда поступил на матроса</p>
+        </center>
+
+        <center>
+            <img src="{% static 'main/8.jpeg' %}" alt="My image" width="300" height="400">
+            <p>Когда обвинили, что пустил шептуна</p>
+        </center>
+
+        <center>
+            <img src="{% static 'main/11.jpeg' %}" alt="My image" width="300" height="400">
+            <p>Когда на плечи ложится большой груз</p>
+        </center>
+
+        <center>
+            <img src="{% static 'main/23.jpeg' %}" alt="My image" width="300" height="400">
+            <p>Когда Илья позвал в Баню</p>
+        </center>
+
+        <center>
+            <img src="{% static 'main/26.jpeg' %}" alt="My image" width="300" height="300">
+            <p>Когда с ребятами собрались  на пляж</p>
+        </center>
+
+        <center>
+            <img src="{% static 'main/27.jpeg' %}" alt="My image" width="300" height="300">
+            <p>Когда "держишь" все ИТМО</p>
+        </center>
+
+        <center>
+            <img src="{% static 'main/4.jpeg' %}" alt="My image" width="300" height="400">
+            <p>Когда пары парами, а Наруто по расписанию</p>
+        </center>
+
+        <center>
+            <img src="{% static 'main/25.jpeg' %}" alt="My image" width="300" height="400">
+            <p>Когда типо учишься</p>
+        </center>
+
+        <center>
+            <img src="{% static 'main/24.jpeg' %}" alt="My image" width="300" height="400">
+            <p>Когда сердечко остановилось (или скоро остановится)</p>
+        </center>
+
+        <center>
+            <img src="{% static 'main/9.jpeg' %}" alt="My image" width="300" height="400">
+            <p>Когда незаметил как вырос</p>
+        </center>
+
+        <center>
+            <img src="{% static 'main/18.jpeg' %}" alt="My image" width="300" height="400">
+            <p>Когда звонок по бизнесу</p>
+        </center>
+
+        <center>
+            <img src="{% static 'main/22.jpeg' %}" alt="My image" width="300" height="400">
+            <p>Когда идёшь на экзамен без подготовки</p>
+        </center>
+
+        <center>
+            <img src="{% static 'main/14.jpeg' %}" alt="My image" width="300" height="400">
+            <p>Когда стал лифчиком как и мечтал</p>
+        </center>
+    </div>
+
+    <div class="alert alert-primary mt-2">
+        <h3 align="center">МОИ ЦИТАТЫ</h3>
+        <hr>
+
+        <center>
+            <p><i>"Я не сплю, я повидло!"</i></p>
+        </center>
+
+        <center>
+            <p><i>"А ты знаешь анекдот про нюанс?"</i></p>
+        </center>
+
+        <center>
+            <p><i>"Я так-то си one!"</i></p>
+        </center>
+    </div>
+
+    <div class="alert alert-primary mt-2">
+        <h3 align="center">МОИ ПОДАРКИ</h3>
+        <hr>
+
+        <center>
+            <img src="{% static 'main/poster.png' %}" alt="My image" width="300" height="200">
+            <br><br>
+            <a class="btn btn-outline-primary" href="https://drive.google.com/file/d/1bz5ackwNNUC4YZP4hL4CkyGqmsvc4zrK/view">СсылОчка для просмотра</a>
+        </center>
+    </div>
+
+    <div class="alert alert-primary mt-2">
+        <h3 align="center">ПОСТ ПРО СОБАК</h3>
+        <hr>
+
+        <center>
+            <a class="btn btn-outline-primary" href="{% url 'dogs' %}">СсылОчка на пост</a>
+        </center>
+    </div>
+
+    <div class="alert alert-primary mt-2">
+        <center>
+            <a class="btn btn-danger" href="{% url 'logout' %}">Выйти</a>
+        </center>
+    </div>
+    <br>
+{% endblock %}

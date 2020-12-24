@@ -1,0 +1,29 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+    <br><br><br><br>
+    <div class="alert alert-primary-light mt-2">
+        <center>
+            <h2>Когда ты - чсв, и у тебя есть свой сайт.</h2>
+            <br>
+            <hr>
+            <br>
+            <h4>Хочешь посмотреть?</h4>
+        </center>
+
+        <div class="d-flex justify-content-center h-100">
+            <nav class="my-2 my-md-0 mr-md-3">
+                <a class="btn btn-primary" href="{% url 'login' %}">Вход</a>
+                <a class="btn btn-primary" href="{% url 'register' %}">Регистрация</a>
+            </nav>
+        </div>
+    </div>
+{% endblock %}
+
+
+
